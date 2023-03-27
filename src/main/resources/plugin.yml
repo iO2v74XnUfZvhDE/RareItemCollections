@@ -1,5 +1,0 @@
-name: RareItemCollection
-version: '${version}'
-main: me.io2.rareitemcollections.RareItemCollection
-author: [ iO2 ]
-description: 'Drop random items'

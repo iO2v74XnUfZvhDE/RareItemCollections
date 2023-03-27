@@ -1,6 +1,0 @@
-pinkDiamond:
-  rate: 10000000
-  block: ['diamond_ore', 'deepslate_diamond_ore']
-bambooAle:
-  rate: 10000
-  block: ['bamboo']
