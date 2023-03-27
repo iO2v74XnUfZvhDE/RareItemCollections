@@ -27,9 +27,9 @@ public class BreakListener implements Listener {
     private void onBreakBlock(BlockBreakEvent event) {
         String type = event.getBlock().getBlockData().getAsString();
 
-        Bukkit.broadcastMessage("Type: " + type);
+        // Bukkit.broadcastMessage("Type: " + type);
         RareItemCollections.itemsList.forEach((a, b) -> {
-            Bukkit.broadcastMessage("Processing " + a);
+            // Bukkit.broadcastMessage("Processing " + a);
 
             boolean isContain = false;
             for (String material : b.materials) {
@@ -47,9 +47,9 @@ public class BreakListener implements Listener {
             }
 
             if (isContain) {
-                Bukkit.broadcastMessage("Contain");
+                // Bukkit.broadcastMessage("Contain");
                 int i = random.nextInt(b.rate);
-                Bukkit.broadcastMessage(String.valueOf(i));
+                // Bukkit.broadcastMessage(String.valueOf(i));
                 if (i < 1) {
                     Bukkit.broadcastMessage("§9Rare Drop! §c" + event.getPlayer().getName() + "§f has got §d" + a + "§r");
                     for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
@@ -71,8 +71,6 @@ public class BreakListener implements Listener {
                             item.setPickupDelay(0);
                         }
                     }
-                } else {
-                    Bukkit.broadcastMessage("Miss! " + event.getBlock().getType().name());
                 }
             }
         });
