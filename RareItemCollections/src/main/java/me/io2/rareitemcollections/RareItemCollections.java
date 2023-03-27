@@ -28,7 +28,7 @@ public final class RareItemCollections extends JavaPlugin {
                 getLogger().info(Arrays.toString(stringList.toArray(new String[]{})));
                 itemsList.put(name, new ItemData(stringList, rate));
             } catch (Throwable ignored) {
-                getLogger().info("Erro at " + name);
+                getLogger().info("Error at " + name);
             }
         }
     }

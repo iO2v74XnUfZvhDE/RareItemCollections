@@ -1,31 +1,18 @@
 # RareItemCollections
 ショップ系プラグインと併用したり、単純にコレクション目的で追加するのがおすすめです。
 
-# How to install
+# インストール
+下のリンクから最新のリリースをダウンロードしてください。  
 [Latest Release](https://github.com/iO2v74XnUfZvhDE/RareItemCollections/releases/latest "Latest release link")
 
-# How to build
-1. Clone this project  
+# ビルド
+1. このプロジェクトをクローンする  
 2. gradle clean build  
 
-# How to add items
-If you would like to add your own items, follow these steps  
-Step 1. open config.yml  
-Step 2. add your items according to the following template  
-Step 3. save the file.  
-
-Use /reload if you have already started the server, it is resistant to reloads.  
-There is no ceiling or other functionality. Simple probability.  
-
+# アイテムを追加する方法
+下のテンプレートの通りに、config.ymlに追記してください。
 ```yaml
-# Name here do not use space, use underbar
-Name:
-  rate: 10000000 # The number represents the probability; if 10000 is specified, it means 1/10000.0
+Name: # 名前。スペースの代わりにアンダーバーを使用してください。
+  rate: 10000000 # 確率の値。10000を入れた場合は、1/10000の確率という意味になります。
   block: ['diamond_ore', 'deepslate_diamond_ore'] # Target blocks
 ```
-
-# Q&A
-Q. SDK version?  
-A. 17  
-Q. What version?  
-A. Native version is 1.19  

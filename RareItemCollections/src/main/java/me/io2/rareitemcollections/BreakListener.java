@@ -46,7 +46,7 @@ public class BreakListener implements Listener {
                 int i = random.nextInt(b.rate);
                 // Bukkit.broadcastMessage(String.valueOf(i));
                 if (i < 1) {
-                    Bukkit.broadcastMessage("§9Rare Drop! §c" + event.getPlayer().getName() + "§f has got §d" + a + "§r");
+                    Bukkit.broadcastMessage("§9Rare Drop! §c" + event.getPlayer().getName() + "§fが§d" + a + "§fを手に入れました！§r");
                     for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
                         onlinePlayer.playSound(onlinePlayer.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 1);
                     }
